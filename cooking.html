@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cooking Classes — Creative Cookery Classes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" sizes="64x64" type="image/png" href="/img/CCC icon.png">
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header>
+    <a href="index.html" class="logo">
+      <span class="logo-text">Creative Cookery Classes</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="baking.html">Baking</a>
+      <a href="cooking.html" class="nav-active">Cooking</a>
+      <a href="index.html#cakes">Custom Cakes</a> 
+      <a href="#" class="nav-cta">Enquire Now</a>
+    </nav>
+  </header>
+
+  <!-- ══ PAGE HERO ══ -->
+  <section class="page-hero page-hero--cooking">
+    <div class="page-hero-bg"></div>
+    <div class="page-hero-content">
+      <div class="hero-eyebrow">18 Classes Available</div>
+      <h1>Cooking</em> Classes</h1>
+      <p>From everyday dals to dum biryani — build real cooking skills that last a lifetime.</p>
+    </div>
+  </section>
+
+  <!-- ══ SEARCH & FILTER ══ -->
+  <div class="filter-bar">
+    <div class="filter-bar-inner">
+      <div class="search-wrap">
+        <span class="search-icon" style="margin-top: 4px;">
+          <?xml version="1.0" encoding="utf-8"?><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 122.879 119.799" enable-background="new 0 0 122.879 119.799" xml:space="preserve"><g><path d="M49.988,0h0.016v0.007C63.803,0.011,76.298,5.608,85.34,14.652c9.027,9.031,14.619,21.515,14.628,35.303h0.007v0.033v0.04 h-0.007c-0.005,5.557-0.917,10.905-2.594,15.892c-0.281,0.837-0.575,1.641-0.877,2.409v0.007c-1.446,3.66-3.315,7.12-5.547,10.307 l29.082,26.139l0.018,0.016l0.157,0.146l0.011,0.011c1.642,1.563,2.536,3.656,2.649,5.78c0.11,2.1-0.543,4.248-1.979,5.971 l-0.011,0.016l-0.175,0.203l-0.035,0.035l-0.146,0.16l-0.016,0.021c-1.565,1.642-3.654,2.534-5.78,2.646 c-2.097,0.111-4.247-0.54-5.971-1.978l-0.015-0.011l-0.204-0.175l-0.029-0.024L78.761,90.865c-0.88,0.62-1.778,1.209-2.687,1.765 c-1.233,0.755-2.51,1.466-3.813,2.115c-6.699,3.342-14.269,5.222-22.272,5.222v0.007h-0.016v-0.007 c-13.799-0.004-26.296-5.601-35.338-14.645C5.605,76.291,0.016,63.805,0.007,50.021H0v-0.033v-0.016h0.007 c0.004-13.799,5.601-26.296,14.645-35.338C23.683,5.608,36.167,0.016,49.955,0.007V0H49.988L49.988,0z M50.004,11.21v0.007h-0.016 h-0.033V11.21c-10.686,0.007-20.372,4.35-27.384,11.359C15.56,29.578,11.213,39.274,11.21,49.973h0.007v0.016v0.033H11.21 c0.007,10.686,4.347,20.367,11.359,27.381c7.009,7.012,16.705,11.359,27.403,11.361v-0.007h0.016h0.033v0.007 c10.686-0.007,20.368-4.348,27.382-11.359c7.011-7.009,11.358-16.702,11.36-27.4h-0.006v-0.016v-0.033h0.006 c-0.006-10.686-4.35-20.372-11.358-27.384C70.396,15.56,60.703,11.213,50.004,11.21L50.004,11.21z"/></g></svg>
+        </span>
+        <input type="text" id="searchInput" placeholder="Search cooking classes..." class="search-input" />
+        <button class="search-clear" id="searchClear" aria-label="Clear search">✕</button>
+      </div>
+      <div class="filter-chips" id="filterChips">
+        <button class="chip chip--active" data-level="all">All Levels</button>
+        <button class="chip" data-level="Beginner">Beginner</button>
+        <button class="chip" data-level="Intermediate">Intermediate</button>
+        <button class="chip" data-level="All Levels">All Levels Only</button>
+      </div>
+      <div class="filter-count" id="filterCount"></div>
+    </div>
+  </div>
+
+  <!-- ══ COURSES GRID ══ -->
+  <section class="courses-wrapper">
+    <div class="courses-grid" id="cookingGrid"></div>
+    <div class="no-results" id="noResults" style="display:none">
+      <div class="no-results-icon">🍛</div>
+      <p>No classes match your search. Try a different keyword or level.</p>
+      <button onclick="resetFilters()" class="btn-all-courses" style="margin-top:16px">Clear Filters</button>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-text footer-logo-text">Creative Cookery Classes</span>
+        </a>
+        <p>Hands-on cooking &amp; baking classes for all skill levels, plus customised celebration cakes — made with love, every time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Classes</h4>
+        <a href="baking.html">Baking Classes</a>
+        <a href="cooking.html">Cooking Classes</a>
+        <a href="index.html#cakes">Custom Cakes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="#">WhatsApp Us</a>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Creative Cookery Classes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ══ DETAIL OVERLAY ══ -->
+  <div class="overlay" id="overlay">
+    <div class="detail-panel">
+
+      <!-- Hero image/emoji — does not scroll -->
+      <button class="detail-close" onclick="closeDetail()">✕</button>
+
+      <!-- Scrollable area — only this scrolls -->
+      <div class="detail-scroll-area" id="detScrollArea">
+        <div class="detail-hero-thumb" id="detHero">
+        </div>
+        <div class="detail-body-inner">
+          <div class="det-title" id="detTitle"></div>
+          <div class="det-desc" id="detDesc"></div>
+          <div class="det-chips" id="detChips"></div>
+          <div class="det-topics-head">What's Included</div>
+          <ul class="det-topics" id="detTopics"></ul>
+        </div>
+      </div>
+      
+      <div class="det-footer">
+        <div>
+          <div class="det-price" id="detPrice"></div>
+          <div class="det-price-note">Payment arranged directly — no online transactions.</div>
+        </div>
+        <div class="cta-btns">
+          <div class="enrol-wrap">
+            <span class="enrol-label">Enrol now via</span>
+            <a class="btn-wa" id="detWa" href="#" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+              </svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

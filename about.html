@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Creative Cookery Classes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" sizes="64x64" type="image/png" href="/img/CCC icon.png">
+  <style>
+    .about-hero {
+      display: grid;
+      grid-template-columns: minmax(320px, 420px) 1fr;
+      align-items: start;
+      justify-content: center;
+      gap: 10px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 72px 50px 80px;
+    }
+    .about-hero-img {
+      position: relative;
+    }
+    .about-hero-img img {
+      width: 100%;
+      max-width: 370px;
+      border-radius: 10px;
+      object-fit: cover;
+      box-shadow: 0 24px 64px rgba(139,80,80,0.18);
+      display: block; 
+    }
+    .about-hero-img .about-badge {
+      display:none
+    }
+    .about-content {
+      width: 100%;
+    }
+    .about-eyebrow {
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 12px;
+    }
+    .about-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      font-weight: 300;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .about-body p {
+      font-size: 0.95rem;
+      color: var(--text-mid);
+      line-height: 1.85;
+      font-weight: 300;
+      margin-bottom: 16px;
+      text-align: justify;
+    }
+    .about-body p:last-child { margin-bottom: 0; }
+
+    /* Stats row */
+    .about-stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .about-stat {
+      padding: 10px 24px;
+      text-align: center;
+      border-right: 1px solid var(--border);
+    }
+    .about-stat:last-child { border-right: none; }
+    .about-stat-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: var(--rose);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .about-stat-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--text-light);
+    }
+
+    /* Values section */
+    .about-values {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 72px 60px;
+    }
+    .about-values-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2rem;
+      font-weight: 300;
+      color: var(--text);
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .about-values-title em { color: var(--rose); font-style: italic; }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .value-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+    .value-icon { font-size: 2rem; margin-bottom: 14px; }
+    .value-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+    .value-desc {
+      font-size: 0.87rem;
+      color: var(--text-light);
+      line-height: 1.7;
+      font-weight: 300;
+    }
+
+    /* CTA section */
+    .about-cta {
+      background: linear-gradient(135deg, var(--text) 0%, var(--mauve) 60%, #962d21 100%);
+      padding: 72px 60px;
+      text-align: center;
+    }
+    .about-cta h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.4rem;
+      font-weight: 300;
+      color: var(--ivory);
+      margin-bottom: 16px;
+    }
+    .about-cta h2 em { color: var(--gold-light); font-style: italic; }
+    .about-cta p {
+      font-size: 0.95rem;
+      color: rgba(253,248,242,0.65);
+      margin-bottom: 36px;
+      font-weight: 300;
+    }
+    .about-cta-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+    .btn-cta-light {
+      background: var(--ivory);
+      color: var(--text);
+      border: none;
+      padding: 13px 30px;
+      border-radius: 40px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: background .2s, transform .15s;
+    }
+    .btn-cta-light:hover { background: #fff; transform: translateY(-2px); }
+    .btn-cta-outline {
+      background: transparent;
+      color: var(--gold-light);
+      border: 1.5px solid var(--gold);
+      padding: 13px 30px;
+      border-radius: 40px;
+      font-family: 'Jost', sans-serif;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-decoration: none;
+      transition: background .2s, color .2s, transform .15s;
+    }
+    .btn-cta-outline:hover { background: var(--gold); color: var(--text); transform: translateY(-2px); }
+
+    @media (max-width: 860px) {
+      .about-hero-img { width: 300px; align-items: center; justify-content: center;}
+      .about-hero { grid-template-columns: 1fr; padding: 48px 28px; gap: 40px; align-items: center; justify-content: center; }
+      .about-stats { grid-template-columns: 1fr 1fr; }
+      .about-stat { border-bottom: 1px solid var(--border); }
+      .values-grid { grid-template-columns: 1fr; }
+      .about-values { padding: 48px 28px; }
+      .about-cta { padding: 60px 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ══ HEADER ══ -->
+  <header>
+    <a href="index.html" class="logo">
+      <span class="logo-text">Creative Cookery Classes</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="nav-active">About</a>
+      <a href="baking.html">Baking</a>
+      <a href="cooking.html">Cooking</a>
+      <a href="https://wa.me/919911207713" target="_blank" rel="noopener noreferrer" class="nav-cta">Enquire Now</a>
+    </nav>
+  </header>
+
+  <!-- ══ ABOUT HERO ══ -->
+  <section class="about-hero">
+    <div class="about-hero-img">
+      <img src="img/about.jpeg" alt="Kavita — Creative Cookery Classes" />
+      <div class="about-badge">
+        <div class="about-badge-num">18+</div>
+        <div class="about-badge-label">Years of<br>Experience</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="about-eyebrow">Meet Your Instructor</div>
+      <h1 class="about-title">Kavita —<br>Teaching Food with Heart</h1>
+      <div class="about-body">
+        <p>Creative Cookery Classes was founded in 2008 by Kavita, who started with a simple belief: good food should be accessible to everyone. What began as small local classes has grown into a trusted institution that has trained over a lakh students across India.</p>
+        <p>With 18+ years of experience and 60+ courses, Kavita covers everything from one-day beginner workshops to the six-week Diploma programme. Her teaching style is known for being clear, patient and thorough — breaking down even advanced techniques so anyone can follow along confidently.</p>
+        <p>Every recipe taught at Creative Cookery Classes is 100% vegetarian and preservative-free. Whether you want to bake for your family, start a home business, or become a professional baker — there's a course here for you.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ STATS ══ -->
+  <div class="about-stats">
+    <div class="about-stat">
+      <div class="about-stat-num">2008</div>
+      <div class="about-stat-label">Established</div>
+    </div>
+    <div class="about-stat">
+      <div class="about-stat-num">1 Lakh+</div>
+      <div class="about-stat-label">Students Trained</div>
+    </div>
+    <div class="about-stat">
+      <div class="about-stat-num">60+</div>
+      <div class="about-stat-label">Courses Available</div>
+    </div>
+    <div class="about-stat">
+      <div class="about-stat-num">18+</div>
+      <div class="about-stat-label">Years of experience</div>
+    </div>
+  </div>
+
+
+  <!-- ══ CTA ══ -->
+  <section class="about-cta">
+    <h2>Ready to Start Your Journey?</h2>
+    <p>Browse 60+ courses across cooking and baking, or reach out directly on WhatsApp.</p>
+    <div class="about-cta-btns">
+      <a href="baking.html" class="btn-cta-light">Browse Baking Courses</a>
+      <a href="cooking.html" class="btn-cta-light">Browse Cooking Courses</a>
+      <a href="https://wa.me/919911207713" target="_blank" class="btn-cta-outline">
+        WhatsApp Us
+      </a>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="logo footer-logo">
+          <span class="logo-text footer-logo-text">Creative Cookery Classes</span>
+        </a>
+        <p>Hands-on cooking &amp; baking classes for all skill levels, plus customised celebration cakes — made with love, every time.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="baking.html">Baking Classes</a>
+        <a href="cooking.html">Cooking Classes</a>
+        <a href="index.html#cakes">Custom Cakes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Connect</h4>
+        <a href="https://wa.me/919911207713" target="_blank">WhatsApp Us</a>
+        <a href="https://www.instagram.com/creativecookeryclasses/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/creativecookeryclasses/" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Creative Cookery Classes. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Mobile nav toggle for this page
+    const navToggle = document.getElementById('navToggle');
+    const mainNav   = document.getElementById('mainNav');
+    if (navToggle && mainNav) {
+      navToggle.addEventListener('click', () => {
+        const isOpen = mainNav.classList.toggle('open');
+        navToggle.classList.toggle('open', isOpen);
+      });
+      mainNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+        mainNav.classList.remove('open');
+        navToggle.classList.remove('open');
+      }));
+    }
+  </script>
+</body>
+</html>
