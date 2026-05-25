@@ -938,22 +938,25 @@ nav a.nav-active {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 80px;
+
   display: flex;
   align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  gap: 14px;
 }
 .search-wrap {
   display: flex;
   align-items: center;
   gap: 10px;
+
   background: var(--ivory);
   border: 1px solid var(--border);
   border-radius: 40px;
+
   padding: 9px 16px;
-  flex: 1;
-  min-width: 200px;
-  max-width: 360px;
+
+  width: 100%;
+  max-width: 350px;
+
   transition: border-color .2s;
 }
 .search-wrap:focus-within {
@@ -991,42 +994,15 @@ nav a.nav-active {
 .search-clear.visible {
   display: block;
 }
-.filter-chips {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.chip {
-  background: var(--ivory);
-  border: 1px solid var(--border);
-  border-radius: 30px;
-  padding: 7px 16px;
-  font-family: 'Jost', sans-serif;
-  font-size: 0.76rem;
-  font-weight: 500;
-  color: var(--text-mid);
-  cursor: pointer;
-  transition: background .2s, border-color .2s, color .2s;
-}
-.chip:hover {
-  border-color: var(--blush-mid);
-  color: var(--rose);
-}
-.chip--active {
-  background: var(--rose);
-  border-color: var(--rose);
-  color: #fff;
-}
-.chip--active:hover {
-  background: var(--rose-dark);
-  border-color: var(--rose-dark);
-  color: #fff;
-}
 .filter-count {
-  font-size: 0.76rem;
+  font-size: 0.8rem;
   color: var(--text-light);
   white-space: nowrap;
-  margin-left: auto;
+
+  display: flex;
+  align-items: center;
+
+  padding-left: 4px;
 }
 .no-results {
   text-align: center;
@@ -1700,6 +1676,9 @@ footer {
   .cakes-right {
     display: none;
   }
+  .filter-bar {
+  top: 62px;
+}
   .filter-bar-inner {
     padding: 0 24px;
   }
@@ -2050,7 +2029,7 @@ footer {
   justify-content: center;
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
   transition: background 0.2s;
-  opacity: 0;
+  opacity: 1;
 }
 .card-carousel:hover .carousel-btn { opacity: 1; }
 .carousel-prev { left: 8px; }
@@ -2318,6 +2297,22 @@ footer {
   transition: transform 0.4s ease;
   will-change: transform;
 }
+.cake-tile-carousel {
+  overflow: hidden;
+  position: relative;
+  touch-action: pan-y;
+}
+
+.cake-tile-track {
+  display: flex;
+  transition: transform .35s ease;
+  will-change: transform;
+}
+
+.cake-tile-slide {
+  min-width: 100%;
+  flex-shrink: 0;
+}
 
 .cake-tile-slide {
   flex: 0 0 100%;
@@ -2342,8 +2337,8 @@ footer {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(0,0,0,0.35);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.75);
+  color: #000;
   border: none;
   font-size: 1.1rem;
   line-height: 1;
@@ -2351,14 +2346,14 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0;
+  opacity: 1;
   transition: opacity .2s, background .2s;
   z-index: 3;
 }
 .cake-carousel-prev { left: 8px; }
 .cake-carousel-next { right: 8px; }
 .cake-tile:hover .cake-carousel-btn { opacity: 1; }
-.cake-carousel-btn:hover { background: rgba(0,0,0,0.6); }
+.cake-carousel-btn:hover { background: rgba(255, 255, 255, 1); }
 
 /* Dots */
 .cake-carousel-dots {

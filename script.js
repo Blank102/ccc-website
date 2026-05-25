@@ -513,7 +513,7 @@ const baking = [
 
   {
     id: 'b8',
-    images: ['img/Baking/center filled muffins/1.webp', 'img/Baking/center filled muffins/2.webp', 'img/Baking/center filled muffins/3.webp', 'img/Baking/center filled muffins/4.webp'],
+    images: ['img/Baking/Center filled muffins/1.webp', 'img/Baking/Center filled muffins/2.webp', 'img/Baking/Center filled muffins/3.webp', 'img/Baking/Center filled muffins/4.webp'],
     title: 'Center Filled Muffins',
     price: '₹699',
     dur: '3 hrs',
@@ -666,7 +666,7 @@ const baking = [
 
   {
     id: 'b11',
-    images: ['img/Baking/tier cake/1.webp', 'img/Baking/tier cake/2.webp', 'img/Baking/tier cake/3.webp'],
+    images: ['img/Baking/Tier cake/1.webp', 'img/Baking/Tier cake/2.webp', 'img/Baking/Tier cake/3.webp'],
     title: 'Tier Cake',
     price: '₹699',
     dur: '6 hrs',
@@ -852,11 +852,67 @@ const baking = [
     dur: '5 hrs',
     level: 'Intermediate',
 
-    desc: 'Learn the art of laminated puff pastry — buttery, flaky layers made from scratch.',
+    desc: 'An advanced online workshop to help you master rich bakery-style truffle cakes, ganache techniques and sharp professional cake finishing.',
 
-    highlights: [],
+  highlights: [
+    'Professional Truffle Cake Techniques',
+    'Dark, Milk & White Chocolate Ganache',
+    'Sharp Edge Finishing Skills',
+    'Tall Cake Frosting Techniques',
+    'Bakery-Style Chocolate Sponge',
+    'Professional Cake Structuring',
+    'Perfect for Professional Bakers & Businesses'
+  ],
 
-    modules: []
+  modules: [
+    {
+      title: 'Truffle Cake Foundations',
+      items: [
+        'Understanding Truffle Cakes',
+        'Layering & Filling Techniques',
+        'Cake Moistening Methods',
+        'Professional Finishing Concepts'
+      ]
+    },
+    {
+      title: 'Ganache Techniques',
+      items: [
+        'Dark Chocolate Ganache',
+        'Milk Chocolate Ganache',
+        '1:1 Ganache Ratio',
+        '2:1 Ganache Ratio',
+        '3:1 Ganache Ratio',
+        'Dripping & Glazing Techniques',
+        'Sharp Edge Frosting'
+      ]
+    },
+    {
+      title: 'Chocolate Sponge',
+      items: [
+        'Eggless Chocolate Sponge',
+        'Bakery-Style Texture',
+        'Moist Sponge Techniques',
+        'Perfect Baking Methods'
+      ]
+    },
+    {
+      title: 'Tools & Professional Skills',
+      items: [
+        'Tall Scraper Usage',
+        'Palette Knife Techniques',
+        'Cake Smoother Techniques',
+        'Chocolate Handling',
+        'Cake Assembly & Decoration'
+      ]
+    }
+  ],
+
+  topics: [
+    'Truffle Cake Techniques',
+    'Professional Ganache Skills',
+    'Sharp Edge Finishing',
+    'Advanced Chocolate Baking'
+  ]
   },
 
   {
@@ -1812,7 +1868,7 @@ const baking = [
 
   {
     id: 'b32',
-    images: ['img/Baking/Puff pastry/1.webp', 'img/Baking/Puff pastry/2.webp','img/Baking/Puff pastry/3.webp'],
+    images: ['img/Baking/puff pastry/1.webp', 'img/Baking/puff pastry/2.webp','img/Baking/puff pastry/3.webp'],
     title: 'Puff Pastry',
     price: '₹699',
     dur: '5 hrs',
@@ -1870,7 +1926,7 @@ const baking = [
 
   {
     id: 'b33',
-    images: ['img/Baking/christmas/1.webp', 'img/Baking/christmas/2.webp', 'img/Baking/christmas/3.webp'],
+    images: ['img/Baking/Christmas/1.webp', 'img/Baking/Christmas/2.webp', 'img/Baking/Christmas/3.webp'],
     title: 'Christmas Workshop',
     price: '₹777',
     dur: '5 hrs',
@@ -2539,7 +2595,7 @@ const cooking = [
 
   {
     id: 'c12',
-    images: ['img/Cooking/ice creams/1.webp', 'img/Cooking/ice creams/2.webp', 'img/Cooking/ice creams/3.webp'],
+    images: ['img/Cooking/Ice creams/1.webp', 'img/Cooking/Ice creams/2.webp', 'img/Cooking/Ice creams/3.webp'],
     title: 'Natural Exotic Ice Creams',
     price: '₹699',
     dur: '5 sessions',
@@ -3103,6 +3159,34 @@ function moveCakeTile(id, direction) {
     );
   });
 }
+
+document.querySelectorAll(".cake-tile-carousel").forEach(carousel => {
+  let startX = 0;
+  let endX = 0;
+
+  carousel.addEventListener("touchstart", e => {
+    startX = e.touches[0].clientX;
+  }, { passive: true });
+
+  carousel.addEventListener("touchmove", e => {
+    endX = e.touches[0].clientX;
+  }, { passive: true });
+
+  carousel.addEventListener("touchend", () => {
+    const diff = startX - endX;
+
+    const tile = carousel.closest(".cake-tile");
+    const cakeId = tile.dataset.cakeId;
+
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) {
+        moveCakeTile(cakeId, 1);
+      } else {
+        moveCakeTile(cakeId, -1);
+      }
+    }
+  });
+});
 
 
 /* ══════════════════════════════════
