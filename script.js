@@ -11,9 +11,10 @@ const baking = [
     id: 'b1',
     images: ['img/Baking/Diploma/1.webp', 'img/Baking/Diploma/2.webp', 'img/Baking/Diploma/3.webp', 'img/Baking/Diploma/4.webp', 'img/Baking/Diploma/5.webp', 'img/Baking/Diploma/6.webp'],
     title: 'Six-Week Diploma Workshop',
-    price: '₹40,000',
+    onlinePrice: '10,000',
+    offlinePrice: '₹40,000',
+    offlineDuration: '6 weeks',
     dur: '6 Weeks',
-    level: 'Advanced',
 
     desc: 'A comprehensive offline programme taking you from basics to professional — ideal for aspiring bakers, entrepreneurs and home bakers.',
 
@@ -179,9 +180,10 @@ const baking = [
     id: 'b2',
     images: ['img/Baking/Cake master/1.webp', 'img/Baking/Cake master/2.webp', 'img/Baking/Cake master/3.webp', 'img/Baking/Cake master/4.webp'],
     title: 'Cake Master Workshop',
-    price: '₹22,000',
+    onlinePrice: '₹6,500',
+    offlinePrice: '₹22,000',
+    offlineDuration: '12 days',
     dur: '6 weeks',
-    level: 'Intermediate',
 
     desc: 'A complete offline workshop covering basic to advanced whipped cream cakes, perfect for beginners to start their baking journey.',
 
@@ -265,8 +267,10 @@ const baking = [
     images: ['img/Baking/Beginner to bakers/1.webp', 'img/Baking/Beginner to bakers/2.webp', 'img/Baking/Beginner to bakers/3.webp', 'img/Baking/Beginner to bakers/4.webp'],
     title: 'Beginners to Baker Workshop',
     price: '₹6,500',
+    onlinePrice: '₹1,199',
+    offlinePrice: '₹6,500',
+    offlineDuration: '2 days',
     dur: '2 Days',
-    level: 'Beginner',
 
     desc: 'A complete hands-on offline workshop designed for beginners who want to start baking and take designer cake orders from home.',
 
@@ -335,10 +339,12 @@ const baking = [
     images: ['img/Baking/Swiss roll/1.webp', 'img/Baking/Swiss roll/2.webp', 'img/Baking/Swiss roll/3.webp', 'img/Baking/Swiss roll/4.webp'],
     title: 'Swiss Rolls',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
     dur: '6 Weeks',
-    level: 'Advanced',
 
-    desc: 'An online workshop to help you master soft, perfect eggless Swiss rolls with a variety of unique and bakery-style flavours.',
+    desc: '	Master soft eggless Swiss rolls with clean rolling techniques, smooth fillings, and a variety of bakery-style flavours.',
 
     highlights: [
       'Lifetime Video Access',
@@ -397,10 +403,12 @@ const baking = [
     images: ['img/Baking/Pastries/1.webp', 'img/Baking/Pastries/2.webp', 'img/Baking/Pastries/3.webp'],
     title: 'Pastries',
     price: '₹499',
+    onlinePrice: '₹499',
+    offlinePrice: '₹1,500',
+    offlineDuration: '1 day',
     dur: '2.5 hrs',
-    level: 'Beginner',
 
-    desc: 'An online workshop to help you master soft sponges and classic bakery-style pastries with professional techniques.',
+    desc: 'Learn to create soft sponges, balanced creams, and classic bakery-style pastries with a polished professional finish.',
 
     highlights: [
       'Lifetime Video Access',
@@ -429,10 +437,12 @@ const baking = [
     images: ['img/Baking/Tea time/1.webp', 'img/Baking/Tea time/2.webp', 'img/Baking/Tea time/3.webp'],
     title: 'Tea Time Cakes',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
     dur: '3 hrs',
-    level: 'Intermediate',
 
-    desc: 'An online workshop to help you create unique, eggless tea-time cakes perfect for festive celebrations and homemade treats.',
+    desc: '	Bake unique eggless tea-time cakes suited for festive celebrations, gifting, and everyday homemade treats.',
 
     highlights: [
       'Pre-recorded Tutorials with Lifetime Access',
@@ -470,10 +480,12 @@ const baking = [
     title: 'Pastries',
     title: 'Eggless Muffins Workshop',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
     dur: '3 hrs',
-    level: 'Beginner',
 
-    desc: 'An online workshop to help you bake soft, flavourful eggless muffins with a variety of classic and creative combinations.',
+    desc: '	Bake soft, flavourful eggless muffins with classic combinations, creative variations, and reliable texture technique.',
 
     highlights: [
       'Lifetime Recorded Sessions',
@@ -509,10 +521,12 @@ const baking = [
     images: ['img/Baking/Center filled muffins/1.webp', 'img/Baking/Center filled muffins/2.webp', 'img/Baking/Center filled muffins/3.webp', 'img/Baking/Center filled muffins/4.webp'],
     title: 'Center Filled Muffins',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
     dur: '3 hrs',
-    level: 'Intermediate',
 
-    desc: 'A unique online workshop to help you master soft muffins with delicious centre fillings and a variety of premium flavours.',
+    desc: '	Master soft muffins with rich centre fillings, premium flavours, and clean bakery-style presentation.',
 
     highlights: [
       'Lifetime Video Access',
@@ -557,10 +571,12 @@ const baking = [
     images: ['img/Baking/Sponge masterclass/sponge 1.webp', 'img/Baking/Sponge masterclass/sponge 2.webp'],
     title: 'Cake Sponges Masterclass',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '1 days',
     dur: '4 hrs',
-    level: 'All Levels',
 
-    desc: 'An online masterclass to help you perfect soft, eggless cake sponges using simple, pocket-friendly ingredients—ideal for professional baking.',
+    desc: '	Perfect soft eggless cake sponges using simple ingredients, stable methods, and professional baking fundamentals',
 
     highlights: [
       'Lifetime Access to Recorded Sessions',
@@ -596,10 +612,12 @@ const baking = [
     images: ['img/Baking/Beginners course 1/1.webp', 'img/Baking/Beginners course 1/2.webp', 'img/Baking/Beginners course 1/3.webp', 'img/Baking/Beginners course 1/4.webp'],
     title: 'Beginner Baking Course 1',
     price: '₹1,299',
+    onlinePrice: '₹1,299',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
     dur: '5 hrs',
-    level: 'Beginner',
 
-    desc: 'A beginner-friendly online workshop covering muffins, tea-time cakes, sponge basics, and cake decoration to help you start your baking journey with confidence.',
+    desc: 'A beginner-friendly workshop covering muffins, tea-time cakes, sponge basics, and cake decoration to help you start your baking journey with confidence.',
 
     highlights: [
       'Lifetime Video Access',
@@ -662,10 +680,12 @@ const baking = [
     images: ['img/Baking/Tier cake/1.webp', 'img/Baking/Tier cake/2.webp', 'img/Baking/Tier cake/3.webp'],
     title: 'Tier Cake',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '1 day',
     dur: '6 hrs',
-    level: 'Advanced',
 
-    desc: 'An advanced online workshop to help you master professional tier cake stacking, airbrush techniques, and safe cake delivery methods.',
+    desc: 'An advanced workshop to help you master professional tier cake stacking, airbrush techniques, and safe cake delivery methods.',
 
     highlights: [
       'Lifetime Video Tutorials',
@@ -720,10 +740,11 @@ const baking = [
     images: ['img/Baking/cupcakes/1.webp', 'img/Baking/cupcakes/2.webp'],
     title: 'Designer Cupcakes',
     price: '₹666',
-    dur: '3 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹666',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
 
-    desc: 'An online workshop to help you master baking, filling and decorating beautiful designer cupcakes with professional techniques.',
+    desc: 'Create beautiful designer cupcakes with baking, filling, frosting, and decoration techniques for a premium finish.',
 
     highlights: [
       'Printed Notes Included',
@@ -783,10 +804,11 @@ const baking = [
     id: 'b13',
     title: 'Buttercream Cupcake',
     price: '₹699',
-    dur: '4 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you master classic buttercream cupcakes with unique flavours, fillings and professional decoration techniques.',
+    desc: 'Master classic buttercream cupcakes with unique flavours, smooth fillings, and elegant decoration techniques.',
 
     highlights: [
       'Lifetime Video Access',
@@ -842,10 +864,11 @@ const baking = [
     images: ['img/Baking/Truffle/1.webp'],
     title: 'Truffle Cake',
     price: '₹699',
-    dur: '5 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
 
-    desc: 'An advanced online workshop to help you master rich bakery-style truffle cakes, ganache techniques and sharp professional cake finishing.',
+    desc: 'Make rich bakery-style truffle cakes with ganache handling, sharp finishing, and premium chocolate techniques.',
 
   highlights: [
     'Professional Truffle Cake Techniques',
@@ -913,10 +936,11 @@ const baking = [
     images: ['img/Baking/Cookies/1.webp', 'img/Baking/Cookies/2.webp', 'img/Baking/Cookies/3.webp', 'img/Baking/Cookies/4.webp', 'img/Baking/Cookies/5.webp'],
     title: 'Cafe Cookies',
     price: '₹1,199',
-    dur: '4 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹1,199',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you master café-style premium cookies, butter cookies and festive gifting favourites with professional eggless recipes.',
+    desc: 'A workshop to help you master café-style premium cookies, butter cookies and festive gifting favourites with professional eggless recipes.',
 
     highlights: [
     '23 Main Cookie Recipes',
@@ -996,10 +1020,11 @@ const baking = [
     images: ['img/Baking/Cookie tin/all.webp', 'img/Baking/Cookie tin/2.webp', 'img/Baking/Cookie tin/3.webp'],
     title: 'Dubai Viral Cookie Tin',
     price: '₹699',
-    dur: '4 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
 
-    desc: 'An online workshop to help you create viral Dubai-style cookies tins packed with brookies, brownies, lava cakes and gourmet cookie flavours.',
+    desc: 'Make viral Dubai-style cookie tins with center-filled gourmet cookies, perfect for gifting or selling.',
 
     highlights: [
     'Lifetime Video Access',
@@ -1047,10 +1072,11 @@ const baking = [
     images: ['img/Baking/Gourmet cookies/1.webp'],
     title: 'Gourmet Cookies',
     price: '₹699',
-    dur: '4 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you master rich gourmet and lava-filled cookies with premium flavours and bakery-style techniques.',
+    desc: 'A workshop to help you master rich gourmet and lava-filled cookies with premium flavours and bakery-style techniques.',
 
     highlights: [
     '11 Gourmet Cookie Recipes',
@@ -1093,10 +1119,11 @@ const baking = [
     images: ['img/Baking/Millet cookies/1.webp', 'img/Baking/Millet cookies/2.webp', 'img/Baking/Millet cookies/3.webp', 'img/Baking/Millet cookies/4.webp'],
     title: 'Millet Cookies',
     price: '₹1,199',
-    dur: '4 hrs',
-    level: 'Beginner',
+    onlinePrice: '₹1,199',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you create healthy, sugar-free, vegan and gluten-free cookies using wholesome ingredients and no maida.',
+    desc: '	Bake healthy cookies using wholesome ingredients, with sugar-free, vegan, gluten-free, and no-maida options.',
 
     highlights: [
     '20 Healthy Cookie Recipes',
@@ -1165,10 +1192,11 @@ const baking = [
     images: ['img/Baking/Breads/1.webp', 'img/Baking/Breads/2.webp', 'img/Baking/Breads/3.webp', 'img/Baking/Breads/4.webp'],
     title: 'Breads',
     price: '₹699',
-    dur: '5 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
 
-    desc: 'An online workshop to help you master soft and artisan-style homemade breads without preservatives or chemicals.',
+    desc: 'This workshop will help you master soft and artisan-style homemade breads without preservatives or chemicals.',
 
   highlights: [
     'Fresh Homemade Bread Techniques',
@@ -1230,12 +1258,56 @@ const baking = [
     id: 'b20',
     title: 'No Maida Healthy Breads',
     price: '₹699',
-    dur: '5 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
     desc: 'Learn to bake nutritious gluten-free breads at home with simple, wholesome ingredients.',
 
-    
+  highlights: [
+    'No Maida & No Refined Sugar Recipes',
+    'Healthy Whole Wheat & Multigrain Baking',
+    'Lifetime Video Access',
+    'Detailed Tutorials & PDF Notes',
+    'WhatsApp Support Included',
+    'Healthy Pizza & Bread Variations',
+    'Perfect for Everyday Healthy Baking'
+  ],
+
+  modules: [
+    {
+      title: 'Healthy Bread Recipes',
+      items: [
+        '100% Whole Wheat Bread',
+        'Multigrain Bread',
+        'Semolina Bread',
+        'Beetroot Bread',
+        'Focaccia Bread',
+        'Multigrain Italian Buns',
+        'Multigrain Ladi Pav',
+        'Multigrain Garlic Bread',
+        'Subway-Style Bread',
+        'Pesto Spiral Bread',
+        'Blueberry Bloom Bread',
+        'Masala Stuffed Bread'
+      ]
+    },
+    {
+      title: 'Healthy Pizza Bases',
+      items: [
+        'Whole Wheat Pizza',
+        'Semolina Pizza Base',
+        'Multigrain Pizza Base'
+      ]
+    }
+  ],
+
+  topics: [
+    'Healthy Bread Baking',
+    'Whole Wheat & Multigrain Baking',
+    'Healthy Pizza Bases',
+    'Wholesome Everyday Baking'
+  ]
   },
 
   {
@@ -1243,10 +1315,11 @@ const baking = [
     images: ['img/Baking/Cheesecakes/1.webp', 'img/Baking/Cheesecakes/2.webp', 'img/Baking/Cheesecakes/3.webp', 'img/Baking/Cheesecakes/4.webp'],
     title: 'Cold and Baked Cheesecake',
     price: '₹699',
-    dur: '4 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you master eggless baked and chilled cheesecakes with professional textures, flavours and storage techniques.',
+    desc: 'Master eggless baked and chilled cheesecakes with smooth textures, balanced flavours, and storage guidance.',
 
     highlights: [
     '100% Eggless & Vegetarian Recipes',
@@ -1307,10 +1380,11 @@ const baking = [
     images: ['img/Baking/Brownies/1.webp', 'img/Baking/Brownies/2.webp'],
     title: 'Brownies and Blondies',
     price: '₹699',
-    dur: '3 hrs',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you master rich eggless brownies and blondies with gourmet flavours, textures and bakery-style techniques.',
+    desc: 'A workshop to help you master rich eggless brownies and blondies with gourmet flavours, textures and bakery-style techniques.',
 
   highlights: [
     'Eggless Brownies & Blondies',
@@ -1372,10 +1446,11 @@ const baking = [
     images: ['img/Baking/Millet brownies/1.webp', 'img/Baking/Millet brownies/2.webp'],
     title: 'Millet Brownies',
     price: '₹699',
-    dur: '3 hrs',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you create rich, guilt-free millet brownies that are gluten-free, eggless and made without refined ingredients.',
+    desc: 'Bake rich millet brownies that are gluten-free, eggless, and made without refined ingredients.',
 
     highlights: [
     '8 Healthy Brownie Flavours',
@@ -1425,10 +1500,11 @@ const baking = [
     images: ['img/Baking/Jar desserts/1.webp', 'img/Baking/Jar desserts/2.webp', 'img/Baking/Jar desserts/3.webp'],
     title: 'Jar Desserts',
     price: '₹699',
-    dur: '3 hrs',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you create premium jar desserts including tiramisu, tres leches and cheesecake jars with multiple flavour variations.',
+    desc: '	Create premium jar desserts including tiramisu, tres leches, and cheesecake jars with multiple flavour variations.',
 
   highlights: [
     'No Egg, Gelatin or Agar Agar',
@@ -1488,10 +1564,11 @@ const baking = [
     images: ['img/Baking/fudge/1.webp', 'img/Baking/fudge/2.webp', 'img/Baking/fudge/3.webp', 'img/Baking/fudge/4.webp'],
     title: 'Fudge Workshop',
     price: '₹699',
-    dur: '3 hrs',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you create rich, exotic and festive-style fudges with unique flavours and professional techniques.',
+    desc: 'Make rich festive fudges with exotic flavours, smooth textures, and professional finishing techniques.',
 
   highlights: [
     'Exotic & Festive Fudge Recipes',
@@ -1560,10 +1637,11 @@ const baking = [
     images: ['img/Baking/korean/1.webp', 'img/Baking/korean/2.webp', 'img/Baking/korean/3.webp'],
     title: 'Korean Cinnamon Rolls',
     price: '₹666',
-    dur: '4 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹666',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
 
-    desc: 'An online workshop to help you master soft, flavorful Korean-style dessert rolls with premium fillings and bakery-style techniques.',
+    desc: 'A workshop to help you master soft, flavorful Korean-style dessert rolls with premium fillings and bakery-style techniques.',
 
   highlights: [
     '15 Eggless Korean Roll Recipes',
@@ -1621,10 +1699,11 @@ const baking = [
     images: ['img/Baking/Millet cakes/1.webp', 'img/Baking/Millet cakes/2.webp', 'img/Baking/Millet cakes/3.webp'],
     title: 'Millet Tea Time Cakes',
     price: '₹699',
-    dur: '3 hrs',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 days',
 
-    desc: 'An online workshop to help you bake wholesome millet-based tea cakes perfect for gifting, festive hampers and healthy indulgence.',
+    desc: 'Bake wholesome millet-based tea cakes ideal for gifting, festive hampers, and healthier indulgence.',
 
     highlights: [
     '9 Millet Tea Cake Recipes',
@@ -1666,8 +1745,9 @@ const baking = [
     images: ['img/Baking/Trifle/1.webp', 'img/Baking/Trifle/2.webp','img/Baking/Trifle/3.webp', 'img/Baking/Trifle/4.webp'],
     title: 'Trifle Dessert',
     price: '₹699',
-    dur: '5 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
 
     desc: 'Learn the art of laminated puff pastry — buttery, flaky layers made from scratch.',
 
@@ -1681,10 +1761,11 @@ const baking = [
     images: ['img/Baking/Travel cakes/1.webp', 'img/Baking/Travel cakes/2.webp', 'img/Baking/Travel cakes/3.webp', 'img/Baking/Travel cakes/4.webp'],
     title: 'Travel Cakes',
     price: '₹699',
-    dur: '3 hrs',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you create rich, flavorful travel cakes that are perfect for gifting, celebrations and premium tea-time treats.',
+    desc: 'A workshop to help you create rich, flavorful travel cakes that are perfect for gifting, celebrations and premium tea-time treats.',
 
   highlights: [
     '15 Premium Travel Cake Recipes',
@@ -1732,10 +1813,11 @@ const baking = [
     images: ['img/Baking/Mirror glaze/1.webp', 'img/Baking/Mirror glaze/2.webp', 'img/Baking/Mirror glaze/4.webp'],
     title: 'Mirror Glazes and Mousse Cakes',
     price: '₹699',
-    dur: '6 hrs',
-    level: 'Advanced',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you master elegant mousse cakes, mirror glazes and professional dessert finishing techniques.',
+    desc: 'Master elegant mousse cakes, mirror glazes, layered textures, and refined dessert finishing techniques.',
 
   highlights: [
     'Exclusive Mousse Cake Recipes',
@@ -1806,10 +1888,11 @@ const baking = [
     images: ['img/Baking/Chandelier cake/1.webp'],
     title: 'Chandelier Cake',
     price: '₹699',
-    dur: '6 hrs',
-    level: 'Advanced',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '1 day',
 
-    desc: 'An online workshop to help you master stunning whipped cream chandelier cakes with professional assembly, styling and transportation techniques.',
+    desc: 'Learn whipped cream chandelier cakes with professional assembly, styling, support, and transportation methods.',
 
   highlights: [
     'Learn 3-Tier Chandelier Cake Techniques',
@@ -1864,10 +1947,11 @@ const baking = [
     images: ['img/Baking/puff pastry/1.webp', 'img/Baking/puff pastry/2.webp','img/Baking/puff pastry/3.webp'],
     title: 'Puff Pastry',
     price: '₹699',
-    dur: '5 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you master flaky, buttery puff pastries and savory bakes made completely from scratch without margarine.',
+    desc: 'Make flaky puff pastries and savoury bakes from scratch using butter-based methods without margarine.',
 
   highlights: [
     'Fresh Puff Pastry from Scratch',
@@ -1922,10 +2006,11 @@ const baking = [
     images: ['img/Baking/Christmas/1.webp', 'img/Baking/Christmas/2.webp', 'img/Baking/Christmas/3.webp'],
     title: 'Christmas Workshop',
     price: '₹777',
-    dur: '5 hrs',
-    level: 'All Levels',
+    onlinePrice: '₹777',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you create festive Christmas cakes, cookies and holiday treats perfect for gifting and celebrations.',
+    desc: 'Create festive Christmas cakes, cookies, and holiday treats suited for celebrations, gifting, and seasonal hampers.',
 
   highlights: [
     'Eggless Christmas Baking Workshop',
@@ -1985,8 +2070,9 @@ const baking = [
     images: ['img/Baking/Festival cakes/1.webp', 'img/Baking/Festival cakes/2.webp','img/Baking/Festival cakes/3.webp', 'img/Baking/Festival cakes/4.webp', 'img/Baking/Festival cakes/5.webp'],
     title: 'Festival cakes',
     price: '₹699',
-    dur: '5 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
 
     desc: 'Learn the art of laminated puff pastry — buttery, flaky layers made from scratch.',
 
@@ -1999,10 +2085,11 @@ const baking = [
     id: 'b35',
     title: 'Iyengar Bakery Style Cake',
     price: '₹666',
-    dur: '4 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹666',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
 
-    desc: 'An online workshop to help you recreate the iconic soft, rich and flavorful Iyengar bakery-style cakes from Bangalore in eggless versions.',
+    desc: 'Recreate iconic Iyengar bakery-style cakes from Bangalore with soft textures, rich flavour, and eggless methods.',
 
   highlights: [
     'Authentic Iyengar Bakery-Style Recipes',
@@ -2058,10 +2145,11 @@ const cooking = [
     images: ['img/Cooking/Mughlai 1/2.webp', 'img/Cooking/Mughlai 1/1.webp'],
     title: 'Mughlai Course 1',
     price: '₹699',
-    dur: '3 Days',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,500',
+    offlineDuration: '3 days',
 
-    desc: 'An online workshop to help you master rich, restaurant-style Mughlai dishes at home with easy techniques and authentic flavors.',
+    desc: 'Master rich restaurant-style Mughlai dishes with easy techniques, balanced spices, and authentic flavours.',
 
     highlights: [
       'Live Recorded Video Tutorial',
@@ -2114,8 +2202,9 @@ const cooking = [
     images: ['img/Cooking/Mughlai 2/1.webp', 'img/Cooking/Mughlai 2/2.webp'],
     title: 'Mughlai Course 2',
     price: '₹699',
-    dur: '3 Days',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,500',
+    offlineDuration: '2 days',
 
     desc: 'An advanced online workshop to help you recreate rich, restaurant-style Mughlai dishes at home with authentic flavours and techniques.',
 
@@ -2169,10 +2258,11 @@ const cooking = [
     images: ['img/Cooking/Soups/1.webp', 'img/Cooking/Soups/2.webp', 'img/Cooking/Soups/3.webp'],
     title: 'Soups',
     price: '₹699',
-    dur: '3 Days',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '2 days',
 
-    desc: 'A cozy online workshop to help you create a variety of healthy, restaurant-style soups perfect for winter comfort and everyday meals.',
+    desc: 'A cozy workshop to help you create a variety of healthy, restaurant-style soups perfect for winter comfort and everyday meals.',
 
     highlights: [
       'Lifetime Access to Recorded Sessions',
@@ -2226,10 +2316,11 @@ const cooking = [
     images: ['img/Cooking/Kebab/1.webp', 'img/Cooking/Kebab/2.webp', 'img/Cooking/Kebab/3.webp', 'img/Cooking/Kebab/4.webp'],
     title: 'Veg Kebabs',
     price: '₹699',
-    dur: '3 hrs',
-    level: 'All Levels',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you create restaurant-style veg kababs, wraps and dips at home with professional techniques and flavours.',
+    desc: 'Make restaurant-style veg kebabs, wraps, and dips with flavourful marinades and professional shaping techniques.',
 
     highlights: [
       'Lifetime Access to Recorded Sessions',
@@ -2273,10 +2364,11 @@ const cooking = [
     images: ['img/Cooking/Italian/1.webp', 'img/Cooking/Italian/2.webp', 'img/Cooking/Italian/3.webp', 'img/Cooking/Italian/4.webp'],
     title: 'Italian Cuisine',
     price: '₹699',
-    dur: '4 hrs',
-    level: 'Intermediate',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you master authentic Italian dishes—from fresh pasta and pizzas to classic sauces and baked favourites.',
+    desc: 'Master fresh pasta, pizzas, classic sauces, baked favourites, and essential Italian cooking techniques.',
 
     highlights: [
       'Lifetime Access to Recorded Sessions',
@@ -2320,8 +2412,9 @@ const cooking = [
     images: ['img/Cooking/Pizza/1.webp', 'img/Cooking/Pizza/2.webp', 'img/Cooking/Pizza/3.webp', 'img/Cooking/Pizza/4.webp'],
     title: 'Pizza Workshop',
     price: '₹699',
-    dur: '3 hrs',
-    level: 'All Levels',
+    onlinePrice: '₹699',
+    offlinePrice: '₹1,500',
+    offlineDuration: '1 day',
 
     desc: 'A workshop to help you master bakery-style pizzas at home—from dough making to sauces and multiple delicious variations.',
 
@@ -2369,10 +2462,11 @@ const cooking = [
     images: ['img/Cooking/Sandwiches/1.webp', 'img/Cooking/Sandwiches/2.webp', 'img/Cooking/Sandwiches/3.webp'],
     title: 'Sandwiches',
     price: '₹699',
-    dur: '2 hrs',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '2 days',
 
-    desc: 'An online workshop to help you create a wide variety of delicious sandwiches with homemade dressings, perfect for snacks, meals and small food businesses.',
+    desc: 'Create a wide variety of sandwiches with homemade dressings, flavourful fillings, and small-business friendly combinations.',
 
     highlights: [
       'Lifetime Video Access',
@@ -2416,8 +2510,9 @@ const cooking = [
     images: ['img/Cooking/gravy premixes/1.webp', 'img/Cooking/gravy premixes/2.webp', 'img/Cooking/gravy premixes/3.webp'],
     title: 'Gravy Premixes',
     price: '₹699',
-    dur: '2 hrs',
-    level: 'Beginner',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
 
     desc: 'A workshop to help you create instant, preservative-free gravy premixes that let you cook restaurant-style dishes in minutes.',
 
@@ -2475,10 +2570,12 @@ const cooking = [
     images: ['img/Cooking/Chaap/1.webp', 'img/Cooking/Chaap/2.webp', 'img/Cooking/Chaap/3.webp'],
     title: 'Soya Chaap Special Workshop',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
-    desc: 'An online workshop to help you master a variety of flavorful soya chaap dishes, from street-style snacks to rich restaurant-style preparations.',
+    desc: 'A workshop to help you master a variety of flavorful soya chaap dishes, from street-style snacks to rich restaurant-style preparations.',
 
     highlights: [
       'Lifetime Video Access',
@@ -2519,14 +2616,71 @@ const cooking = [
     images: ['img/Cooking/Donuts/1.webp', 'img/Cooking/Donuts/1.webp', 'img/Cooking/Donuts/1.webp'],
     title: 'Donuts',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
     desc: 'A comprehensive workshop covering classic yeast-risen and cake donuts with a variety of glazes and toppings.',
 
-    highlights: [],
+  highlights: [
+    '24+ Donut Variations',
+    'Soft & Fluffy Dough Techniques',
+    'Classic & Gourmet Glazes',
+    'Creative Fillings & Toppings',
+    'Bakery-Style Finishing Skills',
+    'Perfect for Home Bakers & Businesses',
+    'Learn Endless Flavor Variations'
+  ],
 
-    modules: []
+  modules: [
+    {
+      title: 'Classic & Glazed Donuts',
+      items: [
+        'Cake Donuts',
+        'Classic Glazed Donut',
+        'Glazed Cinnamon Donut',
+        'Sugar Cinnamon Donut',
+        'Sugar Glaze Donut',
+        'Pista Sugar Glaze Donut'
+      ]
+    },
+    {
+      title: 'Chocolate & Truffle Donuts',
+      items: [
+        'Death by Chocolate Donut',
+        'Mocha Truffle Donut',
+        'Milk Chocolate Donut',
+        'Chocolate Cherry Bomb',
+        'Chocolate Iced Custard Donut',
+        'Dark Fantasy Donut',
+        'Double Trouble Donut'
+      ]
+    },
+    {
+      title: 'Premium & Fusion Flavours',
+      items: [
+        'Cookie Cream Donut',
+        'Crunchy Rainbow Donut',
+        'Cool Blue Ice Donut',
+        'Red Velvet Donut',
+        'Salted Caramel Dream Donut',
+        'Strawberry Donut',
+        'Fusion Donut',
+        'Cotton Candy Donut',
+        'Coconut Ganache Donut',
+        'Rainbow Surprise Donut',
+        'LimeLight Donut'
+      ]
+    }
+  ],
+
+  topics: [
+    'Donut Dough Techniques',
+    'Glazing & Decoration',
+    'Bakery-Style Donuts',
+    'Creative Flavor Pairing'
+  ]
   },
 
   {
@@ -2534,10 +2688,12 @@ const cooking = [
     images: ['img/Cooking/Kulfi/1.webp', 'img/Cooking/Kulfi/2.webp', 'img/Cooking/Kulfi/3.webp'],
     title: 'Kulfi Falooda & Yogurt Ice Creams',
     price: '₹4,500',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
-    desc: 'An online workshop to help you create delicious kulfis and yogurt-based ice creams with both dairy and non-dairy techniques.',
+    desc: 'Create kulfis, falooda, and yogurt-based ice creams with dairy and non-dairy methods.',
 
     highlights: [
       'Lifetime Video Tutorial Access',
@@ -2591,10 +2747,12 @@ const cooking = [
     images: ['img/Cooking/Ice creams/1.webp', 'img/Cooking/Ice creams/2.webp', 'img/Cooking/Ice creams/3.webp'],
     title: 'Natural Exotic Ice Creams',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
-    desc: 'An online workshop to help you create 100% natural, preservative-free ice creams with dairy and non-dairy methods and a wide range of exotic flavours.',
+    desc: 'A workshop to help you create 100% natural, preservative-free ice creams with dairy and non-dairy methods and a wide range of exotic flavours.',
 
     highlights: [
       'Lifetime Video Tutorial Access',
@@ -2659,10 +2817,12 @@ const cooking = [
     images: ['img/Cooking/Lassi/1.webp', 'img/Cooking/Lassi/2.webp', 'img/Cooking/Lassi/3.webp'],
     title: 'Thick Market Style Lassi Workshop',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
-    desc: 'An online workshop to help you create thick, creamy, market-style lassi at home with a wide variety of refreshing flavours.',
+    desc: 'This workshop will help you create thick, creamy, market-style lassi at home with a wide variety of refreshing flavours.',
 
     highlights: [
       'Lifetime Video Access',
@@ -2715,8 +2875,10 @@ const cooking = [
     images: ['img/Cooking/Thick shakes/1.webp', 'img/Cooking/Thick shakes/2.webp', 'img/Cooking/Thick shakes/3.webp', 'img/Cooking/Thick shakes/4.webp'],
     title: 'Freaky Shakes Workshop',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
     desc: 'A comprehensive workshop on thick, Instagram-worthy freaky shakes with glass decoration techniques.',
 
@@ -2765,10 +2927,12 @@ const cooking = [
     images: ['img/Cooking/Mocktails/1.webp', 'img/Cooking/Mocktails/2.webp', 'img/Cooking/Mocktails/3.webp', 'img/Cooking/Mocktails/4.webp'],
     title: 'Mocktails and Coolers',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹1,500',
+    offlineDuration: '1 day',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
-    desc: 'An online workshop to help you create refreshing mocktails and coolers with signature syrups and unique flavour combinations.',
+    desc: 'Make refreshing mocktails and coolers with signature syrups, layered flavours, and creative presentation.',
 
     highlights: [
       'Lifetime Video Access',
@@ -2815,10 +2979,12 @@ const cooking = [
     images: ['img/Cooking/Hampers/1.webp', 'img/Cooking/Hampers/2.webp', 'img/Cooking/Hampers/3.webp', 'img/Cooking/Hampers/4.webp'],
     title: 'Hamper Making Workshop',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
-    desc: 'An online workshop to help you create beautifully curated festive hampers with a mix of sweet and savoury treats—perfect for gifting or selling.',
+    desc: 'A workshop to help you create beautifully curated festive hampers with a mix of sweet and savoury treats—perfect for gifting or selling.',
 
     highlights: [
       'Live Recorded Sessions with 1-Month Access',
@@ -2860,10 +3026,12 @@ const cooking = [
     images: ['img/Cooking/Fillings and sauces/1.webp', 'img/Cooking/Fillings and sauces/2.webp', 'img/Cooking/Fillings and sauces/3.webp'],
     title: 'Fillings and Sauces',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
-    desc: 'An online workshop to help you master essential cake fillings, sauces and dessert components that elevate your baking to a professional level.',
+    desc: 'Master cake fillings, sauces, and dessert components that add flavour, texture, and professional polish.',
 
     highlights: [
       'Lifetime Video Access',
@@ -2915,10 +3083,12 @@ const cooking = [
     images: ['img/Cooking/Chocolate/1.webp', 'img/Cooking/Chocolate/2.webp', 'img/Cooking/Chocolate/3.webp'],
     title: 'Professional Chocolate Making and Tempering Workshop',
     price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
     dur: '5 sessions',
-    level: 'Beginner → Intermediate',
 
-    desc: 'An online course to help you master handcrafted chocolates using professional techniques, including tempering couverture chocolate and creating a wide range of premium treats.',
+    desc: 'A course to help you master handcrafted chocolates using professional techniques, including tempering couverture chocolate and creating a wide range of premium treats.',
 
     highlights: [
       'Lifetime Access to Recorded Tutorials',
@@ -3051,7 +3221,23 @@ function carouselMove(event, id, dir) {
 /* ══════════════════════════════════
    BUILD A CARD
 ══════════════════════════════════ */
+function getOnlinePrice(c) {
+  return c.onlinePrice || c.price;
+}
+
+function getOfflinePrice(c) {
+  return c.offlinePrice || '-';
+}
+
+function getOfflineDuration(c) {
+  return c.offlineDuration || '- days';
+}
+
 function buildCard(c, delay = 0) {
+  const onlinePrice = getOnlinePrice(c);
+  const offlinePrice = getOfflinePrice(c);
+  const offlineDuration = getOfflineDuration(c);
+
   return `
     <div class="course-card" onclick="openDetail('${c.id}')" style="animation-delay:${delay}ms"
          data-title="${c.title.toLowerCase()}"
@@ -3062,11 +3248,17 @@ function buildCard(c, delay = 0) {
         <div class="card-title">${c.title}</div>
         <div class="card-desc">${c.desc}</div>
         <div class="card-footer-row">
-          <div>
-            <div class="card-price">${c.price}</div>
-            <div class="card-price-sub">per person</div>
+          <div class="card-price-grid">
+            <div class="card-price-col">
+              <div class="card-price-label">Online</div>
+              <div class="card-price">${onlinePrice}</div>
+            </div>
+            <div class="card-price-col">
+              <div class="card-price-label">Offline</div>
+              <div class="card-price">${offlinePrice}</div>
+              <div class="card-price-sub">${offlineDuration}</div>
+            </div>
           </div>
-          <div class="card-dur">⏱ ${c.dur}</div>
           <div class="card-arrow">→</div>
         </div>
       </div>
@@ -3282,15 +3474,28 @@ function resetFilters() {
 function openDetail(id) {
   const c = allCourses.find(x => x.id === id);
   if (!c) return;
+  const onlinePrice = getOnlinePrice(c);
+  const offlinePrice = getOfflinePrice(c);
+  const offlineDuration = getOfflineDuration(c);
 
   buildDetailHero(c);
 
   document.getElementById('detTitle').textContent = c.title;
   document.getElementById('detDesc').textContent  = c.desc;
   document.getElementById('detPrice').innerHTML   =
-    `${c.price} <span style="font-size:.8rem;color:var(--text-light);font-family:Jost;font-weight:300">per person</span>`;
+    `<div class="det-price-grid">
+      <div class="det-price-col">
+        <span class="det-price-label">Online</span>
+        <span class="det-price-value">${onlinePrice}</span>
+      </div>
+      <div class="det-price-col">
+        <span class="det-price-label">Offline</span>
+        <span class="det-price-value">${offlinePrice}</span>
+        <span class="det-price-sub">${offlineDuration}</span>
+      </div>
+    </div>`;
   document.getElementById('detChips').innerHTML   =
-    `<div class="det-chip">⏱ ${c.dur}</div><div class="det-chip">🎯 ${c.level}</div>`;
+    `<div class="det-chip">Offline: ${offlineDuration}</div>`;
 
   document.getElementById('detTopics').innerHTML =
     (c.highlights || []).map(h => `<li class="dip-hl">${h}</li>`).join('');
@@ -3321,7 +3526,7 @@ function openDetail(id) {
   }
 
   const msg = encodeURIComponent(
-    `Hi! I'm interested in the "${c.title}" class (${c.price}/person). Could you please share more details about the schedule?`
+    `Hi! I'm interested in the "${c.title}" class (online ${onlinePrice}/person, offline ${offlinePrice}). Could you please share more details about the schedule?`
   );
   document.getElementById('detWa').href = `https://wa.me/${WA}?text=${msg}`;
 

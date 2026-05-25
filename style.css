@@ -697,26 +697,39 @@ nav a:hover {
   justify-content: space-between;
   border-top: 1px solid var(--border);
   padding-top: 14px;
+  gap: 12px;
+}
+.card-price-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  flex: 1;
+  min-width: 0;
+}
+.card-price-col {
+  min-width: 0;
+}
+.card-price-label {
+  font-size: 0.62rem;
+  color: var(--text-light);
+  font-family: 'Jost';
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
 }
 .card-price {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  font-weight: 500;
   color: var(--rose);
-  line-height: 1;
+  line-height: 1.1;
 }
 .card-price-sub {
   font-size: 0.65rem;
   color: var(--text-light);
   font-family: 'Jost';
   font-weight: 400;
-}
-.card-dur {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  font-size: 0.76rem;
-  color: var(--text-light);
 }
 .card-arrow {
   width: 30px;
@@ -1473,19 +1486,40 @@ nav a.nav-active {
   flex-shrink: 0;
 }
 .det-price {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 2.2rem;
-  font-weight: 600;
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 500;
   color: var(--rose);
   line-height: 1;
 }
-.det-price-note {
-  font-size: 0.72rem;
-  color: var(--text-light);
+.det-price-grid {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.det-price-col {
+  display: grid;
+  gap: 3px;
+}
+.det-price-label {
   font-family: 'Jost';
+  font-size: 0.68rem;
+  color: var(--text-light);
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+.det-price-value {
+  font-size: 1.2rem;
+}
+.det-price-sub {
+  font-family: 'Jost';
+  font-size: 0.76rem;
+  color: var(--text-light);
   font-weight: 300;
-  margin-top: 3px;
-  font-style: italic;
+}
+.det-price-note {
+  display: none;
 }
 .cta-btns {
   display: flex;
@@ -1748,7 +1782,16 @@ footer {
     font-size: 0.8rem;
   }
   .det-price {
-    font-size: 1.7rem;
+    line-height: 1;
+  }
+  .det-price-grid {
+    gap: 40px;
+  }
+  .det-price-value {
+    font-size: 1.1rem;
+  }
+  .det-price-sub {
+    font-size: 0.68rem;
   }
   .det-price-note {
     font-size: 0.8rem;
