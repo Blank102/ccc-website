@@ -6,17 +6,10 @@ const featuredBakingIds  = ['b1', 'b2', 'b3'];
 const featuredCookingIds = ['c4', 'c14', 'c3'];
 
 
-/* ══════════════════════════════════
-   HOW TO ADD IMAGES TO A COURSE:
-   Add an "images" array to any course object, e.g.:
-   images: ['img/courses/b1-1.jpg', 'img/courses/b1-2.jpg', 'img/courses/b1-3.jpg']
-   If no images are provided, a styled placeholder is shown.
-══════════════════════════════════ */
-
 const baking = [
   {
     id: 'b1',
-    images: ['img/Baking/Diploma/1.webp', 'img/Baking/Diploma/2.webp', 'img/Baking/Diploma/3.webp', 'img/Baking/Diploma/4.webp'],
+    images: ['img/Baking/Diploma/1.webp', 'img/Baking/Diploma/2.webp', 'img/Baking/Diploma/3.webp', 'img/Baking/Diploma/4.webp', 'img/Baking/Diploma/5.webp', 'img/Baking/Diploma/6.webp'],
     title: 'Six-Week Diploma Workshop',
     price: '₹40,000',
     dur: '6 Weeks',
@@ -3356,10 +3349,24 @@ function closeDetail() {
   document.body.style.overflow = '';
 }
 
-document.getElementById('overlay').addEventListener('click', e => {
-  if (e.target === document.getElementById('overlay')) closeDetail();
-});
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeDetail(); });
+const overlay = document.getElementById('overlay');
+
+if (overlay) {
+  overlay.addEventListener('click', e => {
+    if (e.target === overlay) closeDetail();
+  });
+
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeDetail();
+  });
+}
+function closeDetail() {
+  const overlay = document.getElementById('overlay');
+  if (!overlay) return;
+
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+}
 
 
 /* ══════════════════════════════════
