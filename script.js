@@ -10,7 +10,7 @@ const baking = [
   {
     id: 'b1',
     images: ['img/Baking/Diploma/1.webp', 'img/Baking/Diploma/2.webp', 'img/Baking/Diploma/3.webp', 'img/Baking/Diploma/4.webp', 'img/Baking/Diploma/5.webp', 'img/Baking/Diploma/6.webp'],
-    title: 'Six-Week Diploma Workshop',
+    title: 'Six-Week Diploma Course',
     onlinePrice: '10,000',
     offlinePrice: '₹40,000',
     offlineDuration: '6 weeks',
@@ -179,7 +179,7 @@ const baking = [
   {
     id: 'b2',
     images: ['img/Baking/Cake master/1.webp', 'img/Baking/Cake master/2.webp', 'img/Baking/Cake master/3.webp', 'img/Baking/Cake master/4.webp'],
-    title: 'Cake Master Workshop',
+    title: 'Cake Master Course',
     onlinePrice: '₹6,500',
     offlinePrice: '₹22,000',
     offlineDuration: '12 days',
