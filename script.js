@@ -3526,7 +3526,7 @@ function openDetail(id) {
   }
 
   const msg = encodeURIComponent(
-    `Hi! I'm interested in the "${c.title}" class (online ${onlinePrice}/person, offline ${offlinePrice}). Could you please share more details about the schedule?`
+    `Hi! I'm interested in the "${c.title}" class. Could you please share more details about the course?`
   );
   document.getElementById('detWa').href = `https://wa.me/${WA}?text=${msg}`;
 
