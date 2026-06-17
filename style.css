@@ -2036,6 +2036,7 @@ footer {
   overflow: hidden;
   border-radius: 14px 14px 0 0;
   background: #f0ece8;
+  touch-action: pan-y;
 }
 
 .carousel-img {
@@ -2132,6 +2133,7 @@ footer {
   font-family: 'Jost', sans-serif;
   font-size: 0.72rem;
   letter-spacing: 0.03em;
+  z-index: 1;
 }
 .thumb-placeholder-inner svg { opacity: 0.4; }
 
@@ -2155,6 +2157,7 @@ footer {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  touch-action: pan-y;
 }
 .det-carousel-img {
   position: absolute;
@@ -2165,6 +2168,7 @@ footer {
   object-position: center center;
   opacity: 0;
   transition: opacity 0.4s ease;
+  z-index: 2;
 }
 .det-carousel-img.active { opacity: 1; }
 
@@ -2178,7 +2182,7 @@ footer {
   width: 38px; height: 38px;
   font-size: 1.5rem;
   cursor: pointer;
-  z-index: 4;
+  z-index: 10;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2228,7 +2232,7 @@ footer {
   display: flex;
   align-items: center;
   gap: 12px;
-  max-width: 850px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -2245,6 +2249,7 @@ footer {
 .video-carousel-viewport {
   flex: 1;
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .video-carousel-track {
@@ -2302,6 +2307,11 @@ footer {
 
 /* Remove old .video-grid */
 .video-grid { display: none; }
+@media (max-width: 1100px) {
+  .video-carousel-wrap {
+    max-width: 850px;
+  }
+}
 
 @media (max-width: 900px) {
   .video-carousel-track .video-card {

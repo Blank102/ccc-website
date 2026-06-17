@@ -9,7 +9,7 @@ const featuredCookingIds = ['c4', 'c14', 'c3'];
 const baking = [
   {
     id: 'b1',
-    images: ['img/Baking/Diploma/1.webp', 'img/Baking/Diploma/2.webp', 'img/Baking/Diploma/3.webp', 'img/Baking/Diploma/4.webp', 'img/Baking/Diploma/5.webp', 'img/Baking/Diploma/6.webp'],
+    images: ['img/Baking/Diploma/1.webp', 'img/Baking/Diploma/2.webp', 'img/Baking/Diploma/3.webp', 'img/Baking/Diploma/4.webp', 'img/Baking/Diploma/5.webp', 'img/Baking/Diploma/6.webp', 'img/Baking/Diploma/7.webp'],
     title: 'Six-Week Diploma Course',
     onlinePrice: '10,000',
     offlinePrice: '₹40,000',
@@ -802,6 +802,7 @@ const baking = [
 
   {
     id: 'b13',
+    images: ['img/Baking/Buttercream cupcakes/1.webp', 'img/Baking/Buttercream cupcakes/2.webp', 'img/Baking/Buttercream cupcakes/3.webp'],
     title: 'Buttercream Cupcake',
     price: '₹699',
     onlinePrice: '₹699',
@@ -933,7 +934,7 @@ const baking = [
 
   {
     id: 'b15',
-    images: ['img/Baking/Cookies/1.webp', 'img/Baking/Cookies/2.webp', 'img/Baking/Cookies/3.webp', 'img/Baking/Cookies/4.webp', 'img/Baking/Cookies/5.webp'],
+    images: ['img/Baking/Cookies/1.webp', 'img/Baking/Cookies/2.webp', 'img/Baking/Cookies/3.webp', 'img/Baking/Cookies/4.webp'],
     title: 'Cafe Cookies',
     price: '₹1,199',
     onlinePrice: '₹1,199',
@@ -1017,7 +1018,7 @@ const baking = [
 
   {
     id: 'b16',
-    images: ['img/Baking/Cookie tin/all.webp', 'img/Baking/Cookie tin/2.webp', 'img/Baking/Cookie tin/3.webp'],
+    images: ['img/Baking/Cookie tin/1.webp', 'img/Baking/Cookie tin/2.webp', 'img/Baking/Cookie tin/3.webp', 'img/Baking/Cookie tin/4.webp', 'img/Baking/Cookie tin/5.webp'],
     title: 'Dubai Viral Cookie Tin',
     price: '₹699',
     onlinePrice: '₹699',
@@ -1069,7 +1070,7 @@ const baking = [
 
   {
     id: 'b17',
-    images: ['img/Baking/Gourmet cookies/1.webp'],
+    images: ['img/Baking/Gourmet cookies/1.webp', 'img/Baking/Gourmet cookies/2.webp', 'img/Baking/Gourmet cookies/3.webp', 'img/Baking/Gourmet cookies/4.webp', 'img/Baking/Gourmet cookies/5.webp'],
     title: 'Gourmet Cookies',
     price: '₹699',
     onlinePrice: '₹699',
@@ -1256,6 +1257,7 @@ const baking = [
 
   {
     id: 'b20',
+    images: ['img/Baking/Healthy breads/1.webp', 'img/Baking/Healthy breads/2.webp', 'img/Baking/Healthy breads/3.webp', 'img/Baking/Healthy breads/4.webp', 'img/Baking/Healthy breads/5.webp', 'img/Baking/Healthy breads/6.webp'],
     title: 'No Maida Healthy Breads',
     price: '₹699',
     onlinePrice: '₹699',
@@ -1312,7 +1314,7 @@ const baking = [
 
   {
     id: 'b21',
-    images: ['img/Baking/Cheesecakes/1.webp', 'img/Baking/Cheesecakes/2.webp', 'img/Baking/Cheesecakes/3.webp', 'img/Baking/Cheesecakes/4.webp'],
+    images: ['img/Baking/Cheesecakes/1.webp', 'img/Baking/Cheesecakes/2.webp', 'img/Baking/Cheesecakes/3.webp', 'img/Baking/Cheesecakes/4.webp', 'img/Baking/Cheesecakes/5.webp', 'img/Baking/Cheesecakes/6.webp'],
     title: 'Cold and Baked Cheesecake',
     price: '₹699',
     onlinePrice: '₹699',
@@ -2039,8 +2041,7 @@ const baking = [
     {
       title: 'Bonus PDF Recipes',
       items: [
-        'Hot Chocolate Bomb Cookies',
-        'Star Anise Cookies',
+        'Hot Chocolate Bomb',,
         'Christmas Grinch Chocolate Bars',
         'Pumpkin Spice Fudge',
         'Marzipan Dough',
@@ -2052,7 +2053,8 @@ const baking = [
       title: 'Christmas Cookies & Treats',
       items: [
         'Gingerbread Cookies',
-        'Pecan Snowball Cookies'
+        'Pecan Snowball Cookies',
+        'Star Anise Cookies'
       ]
     }
   ],
@@ -2083,6 +2085,8 @@ const baking = [
 
   {
     id: 'b35',
+    images: ['img/Baking/Iyengar cakes/1.webp', 'img/Baking/Iyengar cakes/2.webp', 'img/Baking/Iyengar cakes/3.webp', 'img/Baking/Iyengar cakes/4.webp'],
+    title: 'Swiss Rolls',
     title: 'Iyengar Bakery Style Cake',
     price: '₹666',
     onlinePrice: '₹666',
@@ -3202,7 +3206,7 @@ function buildThumb(c) {
 const carouselState = {};
 
 function carouselMove(event, id, dir) {
-  event.stopPropagation();
+  if (event) event.stopPropagation();
   const course = allCourses.find(c => c.id === id);
   if (!course || !course.images) return;
   const total = course.images.length;
@@ -3307,6 +3311,68 @@ function detCarouselMove(dir) {
   document.querySelectorAll('.det-carousel-img').forEach((img, i) => img.classList.toggle('active', i === current));
   document.querySelectorAll('.det-carousel-dot').forEach((dot, i) => dot.classList.toggle('active', i === current));
 }
+
+function initSwipeNavigation(selector, onSwipe) {
+  let swipeTarget = null;
+  let startX = 0;
+  let startY = 0;
+  let lastX = 0;
+  let lastY = 0;
+
+  document.addEventListener('touchstart', e => {
+    const target = e.target.closest(selector);
+    if (!target) return;
+
+    swipeTarget = target;
+    startX = lastX = e.touches[0].clientX;
+    startY = lastY = e.touches[0].clientY;
+  }, { passive: true });
+
+  document.addEventListener('touchmove', e => {
+    if (!swipeTarget) return;
+    lastX = e.touches[0].clientX;
+    lastY = e.touches[0].clientY;
+  }, { passive: true });
+
+  document.addEventListener('touchend', e => {
+    if (!swipeTarget) return;
+
+    const diffX = startX - lastX;
+    const diffY = startY - lastY;
+    const isSwipe = Math.abs(diffX) > 45 && Math.abs(diffX) > Math.abs(diffY) + 15;
+    const target = swipeTarget;
+    swipeTarget = null;
+
+    if (!isSwipe) return;
+
+    target.dataset.swiped = 'true';
+    window.setTimeout(() => {
+      if (target.dataset.swiped === 'true') delete target.dataset.swiped;
+    }, 400);
+
+    onSwipe(target, diffX > 0 ? 1 : -1, e);
+  }, { passive: true });
+
+  document.addEventListener('click', e => {
+    const target = e.target.closest(selector);
+    if (!target || target.dataset.swiped !== 'true') return;
+    e.preventDefault();
+    e.stopPropagation();
+    delete target.dataset.swiped;
+  }, true);
+}
+
+initSwipeNavigation('.card-carousel', (carousel, dir) => {
+  const id = carousel.dataset.id;
+  const course = allCourses.find(c => c.id === id);
+  if (!course || !course.images || course.images.length < 2) return;
+  carouselMove(null, id, dir);
+});
+
+initSwipeNavigation('.det-carousel', (carousel, dir) => {
+  if ((window._detCarouselTotal || 0) < 2) return;
+  detCarouselMove(dir);
+});
 
 
 const cakeTileIndexes = {
@@ -3612,13 +3678,19 @@ if (cakeWaBtn) cakeWaBtn.href = `https://wa.me/${WA}?text=${cakeMsg}`;
   const nextBtn = document.getElementById('videoNext');
   const dotsContainer = document.getElementById('videoCarouselDots');
   if (!track) return;
+  const viewport = track.closest('.video-carousel-viewport') || track;
 
   const cards = track.querySelectorAll('.video-card');
   const total = cards.length;
   let current = 0;
+  let touchStartX = 0;
+  let touchStartY = 0;
+  let touchLastX = 0;
+  let touchLastY = 0;
+  let suppressVideoClick = false;
 
   function getVisible() {
-    return window.innerWidth >= 900 ? 3 : window.innerWidth >= 600 ? 2 : 1;
+    return window.innerWidth >= 1100 ? 4 : window.innerWidth >= 900 ? 3 : window.innerWidth >= 600 ? 2 : 1;
   }
 
   function getMaxIndex() {
@@ -3653,6 +3725,34 @@ if (cakeWaBtn) cakeWaBtn.href = `https://wa.me/${WA}?text=${cakeMsg}`;
 
   prevBtn && prevBtn.addEventListener('click', () => goTo(current - 1));
   nextBtn && nextBtn.addEventListener('click', () => goTo(current + 1));
+
+  viewport.addEventListener('touchstart', e => {
+    touchStartX = touchLastX = e.touches[0].clientX;
+    touchStartY = touchLastY = e.touches[0].clientY;
+  }, { passive: true });
+
+  viewport.addEventListener('touchmove', e => {
+    touchLastX = e.touches[0].clientX;
+    touchLastY = e.touches[0].clientY;
+  }, { passive: true });
+
+  viewport.addEventListener('touchend', () => {
+    const diffX = touchStartX - touchLastX;
+    const diffY = touchStartY - touchLastY;
+    const isSwipe = Math.abs(diffX) > 45 && Math.abs(diffX) > Math.abs(diffY) + 15;
+    if (!isSwipe) return;
+
+    suppressVideoClick = true;
+    window.setTimeout(() => { suppressVideoClick = false; }, 400);
+    goTo(current + (diffX > 0 ? 1 : -1));
+  }, { passive: true });
+
+  viewport.addEventListener('click', e => {
+    if (!suppressVideoClick) return;
+    e.preventDefault();
+    e.stopPropagation();
+    suppressVideoClick = false;
+  }, true);
 
   window.addEventListener('resize', () => {
     current = Math.min(current, getMaxIndex());
