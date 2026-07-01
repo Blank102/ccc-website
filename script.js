@@ -1314,7 +1314,7 @@ const baking = [
 
   {
     id: 'b21',
-    images: ['img/Baking/Cheesecakes/1.webp', 'img/Baking/Cheesecakes/2.webp', 'img/Baking/Cheesecakes/3.webp', 'img/Baking/Cheesecakes/4.webp', 'img/Baking/Cheesecakes/5.webp', 'img/Baking/Cheesecakes/6.webp'],
+    images: ['img/Baking/Cheesecakes/1.webp', 'img/Baking/Cheesecakes/2.webp', 'img/Baking/Cheesecakes/3.webp', 'img/Baking/Cheesecakes/4.webp'],
     title: 'Cold and Baked Cheesecake',
     price: '₹699',
     onlinePrice: '₹699',
@@ -1499,7 +1499,7 @@ const baking = [
 
   {
     id: 'b24',
-    images: ['img/Baking/Jar desserts/1.webp', 'img/Baking/Jar desserts/2.webp', 'img/Baking/Jar desserts/3.webp'],
+    images: ['img/Baking/Jar desserts/1.webp', 'img/Baking/Jar desserts/2.webp', 'img/Baking/Jar desserts/3.webp', 'img/Baking/Jar desserts/5.webp', 'img/Baking/Jar desserts/6.webp'],
     title: 'Jar Desserts',
     price: '₹699',
     onlinePrice: '₹699',
