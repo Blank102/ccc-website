@@ -1751,11 +1751,53 @@ const baking = [
     offlinePrice: '₹2,000',
     offlineDuration: '1 day',
 
-    desc: 'Learn the art of laminated puff pastry — buttery, flaky layers made from scratch.',
+    desc: 'Master rich, layered trifles with premium flavors, homemade sponge bases and professional dessert presentation techniques.',
 
-    highlights: [],
+    
+  highlights: [
+    'Lifetime Video Access',
+    'WhatsApp Support',
+    'PDF Notes Included',
+    'Premium Layered Dessert Techniques',
+    'Homemade Sponge Recipes',
+    'Packing, Pricing & Selling Tips',
+  ],
 
-    modules: []
+  modules: [
+    {
+      title: 'Signature Trifles',
+      items: [
+        'Strawberry Jelly Trifle',
+        'Banana Cream Banoffee Pie Trifle',
+        'Chocolate Brownie & Salted Caramel Trifle',
+        'Biscoff Cheesecake Trifle',
+        'Tiramisu Trifle',
+        'Chocolate Matilda Trifle'
+      ]
+    },
+    {
+      title: 'Sponge Bases',
+      items: [
+        'Vanilla Sponge',
+        'Chocolate Sponge',
+        'Matilda Sponge'
+      ]
+    },
+    {
+      title: 'Bonus Recipes',
+      items: [
+        'Red Velvet Cheesecake Trifle',
+        'Motichoor Rabri Fusion Trifle'
+      ]
+    },
+  ],
+
+  topics: [
+    'Premium Trifles',
+    'Layered Desserts',
+    'Homemade Sponge Cakes',
+    'Dessert Business Skills'
+  ]
   },
   
   {
@@ -2076,11 +2118,49 @@ const baking = [
     offlinePrice: '₹2,000',
     offlineDuration: '1 day',
 
-    desc: 'Learn the art of laminated puff pastry — buttery, flaky layers made from scratch.',
+    desc: 'Master festive, eggless tea-time cakes with unique flavors, wholesome ingredients and elegant glazes perfect for gifting and celebrations.',
 
-    highlights: [],
+    highlights: [
+    '10 Festive Tea-Time Cake Recipes',
+    '100% Eggless Baking',
+    'Pre-recorded Lifetime Tutorials',
+    'PDF Recipe Notes Included',
+    'WhatsApp Support',
+    'Signature Glazes & Finishing Techniques',
+    'Perfect for Festive Hampers & Gifting'
+  ],
 
-    modules: []
+  modules: [
+    {
+      title: 'Festival Tea-Time Cakes',
+      items: [
+        'Lemon Nutty Affair Cake',
+        'Pineapple Upside Down Cake',
+        'Orange Nutty Spiced Blast Cake',
+        'Caramelized Apple & Cinnamon Cake',
+        'Masala Chai Mocha Cake',
+        'German Chocolate Cake',
+        'Banana Berry Blast Yogurt Cake',
+        'Nutty Wheat & Oats Cake',
+        'Almond & Walnut Streusel Cake',
+        'Banana Whole Wheat Jaggery Cake'
+      ]
+    },
+    {
+      title: 'Glazes & Finishing',
+      items: [
+        'Lemon Glaze',
+        'Orange Glaze'
+      ]
+    }
+  ],
+
+  topics: [
+    'Festival Baking',
+    'Eggless Tea-Time Cakes',
+    'Wholesome Cake Recipes',
+    'Glazes & Finishing'
+  ]
   },
 
   {
