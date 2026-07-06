@@ -1,6 +1,5 @@
 /* ══════════════════════════════════════════════════════
    Creative Cookery Classes — style.css
-   Theme: Soft Blush & Ivory, Feminine / Elegant
 ══════════════════════════════════════════════════════ */
 :root {
   --ivory:        #fdf5ee;
@@ -67,7 +66,6 @@ header {
   justify-content: space-between;
 }
 
-/* Logo — always visible, image + text side by side */
 .logo {
   display: flex;
   align-items: center;
@@ -344,7 +342,7 @@ nav a:hover {
   border: 1px solid var(--border);
 }
 .hv-main  {
-  width: 340px; /* smaller */
+  width: 340px; 
   height: 340px;
   top: 40px;
   left: -40px;
@@ -417,7 +415,6 @@ nav a:hover {
   font-size: 2rem;
 }
 
-/* Logo thumb — shows the logo image centred, no emoji */
 .hv-logo-thumb {
   height: 62%;
   background: var(--blush-light);
@@ -1202,7 +1199,6 @@ nav a.nav-active {
   border: none;
 }
 
-/* Placeholder shown until real video is added */
 .video-placeholder {
   width: 100%;
   height: 100%;
@@ -1315,12 +1311,11 @@ nav a.nav-active {
   background: var(--white);
   border-radius: 24px;
   width: 100%;
-  max-width: 700px;          /* ← wider panel */
-  height: 90vh;              /* ← fixed height so it doesn't grow with content */
+  max-width: 700px;          
+  height: 90vh;              
   display: flex;
   flex-direction: column;
-  overflow: hidden;          /* ← clip children, not the panel itself */
-  box-shadow: 0 32px 80px rgba(46,31,31,0.28);
+  overflow: hidden;          
   animation: panelIn .32s cubic-bezier(.16,1,.3,1);
   position: relative;
 }
@@ -1329,12 +1324,11 @@ nav a.nav-active {
   to   { opacity:1; transform:translateY(0) scale(1) }
 }
 
-/* Close button — always fixed to top-right of panel */
 .detail-close {
   position: absolute;
   top: 12px;
   right: 15px;
-  z-index: 10;               /* ← always on top */
+  z-index: 10;             
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -1350,10 +1344,10 @@ nav a.nav-active {
 }
 .detail-close:hover { background: rgba(83, 83, 83, 0.915); }
 
-/* Hero thumb — does NOT scroll */
+
 .detail-hero-thumb {
   width: 100%;
-  height: 320px;            /* taller in popup — portrait images look great here */
+  height: 320px;            
   flex-shrink: 0;
   display: flex;
   align-items: center;
@@ -1362,7 +1356,6 @@ nav a.nav-active {
   position: relative;
 }
 
-/* Sticky title bar — appears when user scrolls past hero */
 .detail-sticky-bar {
   display: none;
   position: sticky;
@@ -1377,7 +1370,6 @@ nav a.nav-active {
 }
 .detail-sticky-bar.visible { display: block; }
 
-/* Scrollable body — this is the ONLY thing that scrolls */
 .detail-scroll-area {
   flex: 1;
   overflow-y: auto;
@@ -1388,7 +1380,6 @@ nav a.nav-active {
 .detail-scroll-area::-webkit-scrollbar-track { background: transparent; }
 .detail-scroll-area::-webkit-scrollbar-thumb { background: var(--blush-mid); border-radius: 4px; }
 
-/* Footer — does NOT scroll, always visible at bottom */
 .det-footer {
   background: var(--ivory-deep);
   border-top: 1px solid var(--border);
@@ -1398,7 +1389,7 @@ nav a.nav-active {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 14px;
-  flex-shrink: 0;            /* ← never shrinks, always at bottom */
+  flex-shrink: 0;           
 }
 .detail-body-inner {
   padding: 32px 38px 0;
@@ -1640,8 +1631,6 @@ footer {
     padding: 0 24px;
     height: 64px;
   }
-
-  /* Show hamburger, hide desktop nav */
   .nav-toggle {
     display: flex;
   }
@@ -1735,7 +1724,7 @@ footer {
     gap: 32px;
   }
   .footer-brand {
-    grid-column: 1 / -1; /* full width */
+    grid-column: 1 / -1; 
   }
   .video-card {
   align-items: center;
@@ -1823,7 +1812,7 @@ footer {
 }
 
 /* ══════════════════════════════════
-   HERO PHOTO (added)
+   HERO PHOTO 
 ══════════════════════════════════ */
 .hero-photo-wrap {
   position: absolute;
@@ -1905,7 +1894,7 @@ footer {
   align-items: center;
   gap: 24px;
   width: 100%;
-  max-width: 70%; /* ← adjust this number to control line length */
+  max-width: 70%; 
   margin: 0 auto;
 }
 .logo-divider-line {
@@ -2031,7 +2020,7 @@ footer {
 .card-carousel {
   position: relative;
   width: 100%;
-  height: 220px;           /* taller — gives portrait images room */
+  height: 220px;          
   flex-shrink: 0;
   overflow: hidden;
   border-radius: 14px 14px 0 0;
@@ -2098,7 +2087,6 @@ footer {
 }
 .carousel-dot.active { background: #fff; }
 
-/* Gallery hint badge — shows "📷 3 photos" on cards with multiple images */
 .thumb-gallery-hint {
   position: absolute;
   bottom: 10px;
@@ -2114,7 +2102,6 @@ footer {
   z-index: 2;
 }
 
-/* Placeholder thumb when no images */
 .card-thumb--placeholder {
   display: flex;
   align-items: center;
@@ -2305,7 +2292,6 @@ footer {
   transform: scale(1.25);
 }
 
-/* Remove old .video-grid */
 .video-grid { display: none; }
 @media (max-width: 1100px) {
   .video-carousel-wrap {
@@ -2391,7 +2377,6 @@ footer {
   display: block;
 }
 
-/* Carousel nav buttons */
 .cake-carousel-btn {
   position: absolute;
   top: 50%;
@@ -2436,7 +2421,6 @@ footer {
 }
 .cake-carousel-dot.active { background: #fff; }
 
-/* Title/sub now needs padding since we removed tile padding */
 .cake-tile-title, .cake-tile-sub {
   padding-left: 16px;
   padding-right: 16px;
