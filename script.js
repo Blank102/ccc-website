@@ -568,7 +568,7 @@ const baking = [
 
   {
     id: 'b9',
-    images: ['img/Baking/Sponge masterclass/sponge 1.webp', 'img/Baking/Sponge masterclass/Sponge 2.webp'],
+    images: ['img/Baking/Sponge masterclass/sponge 2.webp', 'img/Baking/Sponge masterclass/Sponge 1.webp'],
     title: 'Cake Sponges Masterclass',
     price: '₹699',
     onlinePrice: '₹699',
@@ -677,7 +677,7 @@ const baking = [
 
   {
     id: 'b11',
-    images: ['img/Baking/Tier cake/1.webp', 'img/Baking/Tier cake/2.webp', 'img/Baking/Tier cake/3.webp'],
+    images: ['img/Baking/Tier cake/1.webp', 'img/Baking/Tier cake/2.webp', 'img/Baking/Tier cake/3.webp', 'img/Baking/Tier cake/4.webp'],
     title: 'Tier Cake',
     price: '₹699',
     onlinePrice: '₹699',
@@ -1314,7 +1314,7 @@ const baking = [
 
   {
     id: 'b21',
-    images: ['img/Baking/Cheesecakes/1.webp', 'img/Baking/Cheesecakes/2.webp', 'img/Baking/Cheesecakes/3.webp', 'img/Baking/Cheesecakes/4.webp'],
+    images: ['img/Baking/Cheesecakes/1.webp', 'img/Baking/Cheesecakes/2.webp', 'img/Baking/Cheesecakes/3.webp', 'img/Baking/Cheesecakes/4.webp', 'img/Baking/Cheesecakes/5.webp'],
     title: 'Cold and Baked Cheesecake',
     price: '₹699',
     onlinePrice: '₹699',
@@ -2697,7 +2697,7 @@ const cooking = [
 
   {
     id: 'c10',
-    images: ['img/Cooking/Donuts/1.webp', 'img/Cooking/Donuts/1.webp', 'img/Cooking/Donuts/1.webp'],
+    images: ['img/Cooking/Donuts/1.webp', 'img/Cooking/Donuts/2.webp', 'img/Cooking/Donuts/3.webp', 'img/Cooking/Donuts/4.webp'],
     title: 'Donuts',
     price: '₹699',
     onlinePrice: '₹699',
@@ -2894,6 +2894,64 @@ const cooking = [
         ]
       }
     ]
+  },
+
+    {
+    id: 'c19',
+    images: ['img/Cooking/Millet icecreams/1.webp', 'img/Cooking/Millet icecreams/2.webp', 'img/Cooking/Millet icecreams/3.webp', 'img/Cooking/Millet icecreams/4.webp'],
+    title: 'Millet Ice Creams Workshop',
+    price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,500',
+    offlineDuration: '2 days',
+    dur: '5 sessions',
+
+    desc: 'Master creamy, preservative-free millet ice creams made with wholesome ingredients, natural sweeteners and healthier alternatives for the entire family.',
+
+    highlights: [
+    'No Refined Sugar or Preservatives',
+    'No Ice Cream Machine Required',
+    'Diabetic-Friendly Variations',
+    'Natural Sweeteners & Millet-Based Recipes',
+    'Beginner-Friendly Techniques',
+    'Perfect for Healthy Homemade Desserts'
+  ],
+
+  modules: [
+    {
+      title: 'Natural Millet Ice Cream Flavours',
+      items: [
+        'Pistachio & Rose',
+        'Mango & Passion',
+        'Vanilla & Cream',
+        'Strawberry Ice Cream',
+        'Roasted Almond',
+        'Blueberry Ice Cream',
+        'Filter Coffee & Biscuit',
+        'Anjeer & Walnut',
+        'Sugar-Free Ice Cream',
+        'Biscoff Ice Cream',
+        'Hazelnut & Cream',
+        'Red Velvet Ice Cream'
+      ]
+    },
+    {
+      title: 'Healthy Ice Cream Techniques',
+      items: [
+        'Working with Ragi, Bajra & Jowar',
+        'Using Small Millets',
+        'Natural Sweeteners',
+        'Machine-Free Ice Cream Making'
+      ]
+    }
+  ],
+
+  topics: [
+    'Healthy Ice Creams',
+    'Millet-Based Desserts',
+    'Natural Sweeteners',
+    'Preservative-Free Frozen Treats'
+  ]
   },
 
   {
