@@ -1246,8 +1246,8 @@ const baking = [
     images: ['img/Baking/Mini Dip Cookies/1.webp', 'img/Baking/Mini Dip Cookies/2.webp', 'img/Baking/Mini Dip Cookies/3.webp'],
     title: 'Mini Dip Cookies',
     price: '₹1,199',
-    onlinePrice: '₹1,199',
-    offlinePrice: '₹3,000',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
     offlineDuration: '2 days',
 
     desc: 'Master viral bakery-style mini dip cookies with delicious dipping sauces, premium flavours and professional baking techniques.',
