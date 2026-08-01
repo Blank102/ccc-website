@@ -933,6 +933,59 @@ const baking = [
   },
 
   {
+    id: 'b36',
+    images: ['img/Baking/Luxury chocolate cakes/1.webp', 'img/Baking/Luxury chocolate cakes/2.webp', 'img/Baking/Luxury chocolate cakes/3.webp', 'img/Baking/Luxury chocolate cakes/4.webp'],
+    title: 'Luxury Chocolate Cakes',
+    price: '₹699',
+    onlinePrice: '₹699',
+    offlinePrice: '₹2,000',
+    offlineDuration: '1 day',
+
+    desc: 'Master luxurious bakery-style chocolate cakes with premium fillings, frostings and professional finishing techniques.',
+
+  highlights: [
+    '4 Signature Luxury Chocolate Cakes',
+    'Live & Recorded Sessions',
+    'Lifetime Video Access',
+    'Lifetime WhatsApp Support',
+    'Premium Recipe Collection',
+    'Professional Chocolate Techniques',
+    'Perfect for Home Bakers & Businesses'
+  ],
+
+  modules: [
+    {
+      title: 'Luxury Chocolate Cakes',
+      items: [
+        'Noir Dulce Delight',
+        'Matilda Fudge Cake',
+        'Dark Chocolate Cheese Caramel',
+        'Belgian Chocolate Truffle Nutty Praline'
+      ]
+    },
+    {
+      title: 'Premium Components',
+      items: [
+        'Chocolate Sponge',
+        'Chocolate Ganache',
+        'Salted Caramel',
+        'Fudge Frosting',
+        'Chocolate Cheese Frosting',
+        'Feuilletine Crunch'
+      ]
+    }
+  ],
+
+  topics: [
+    'Luxury Chocolate Cakes',
+    'Premium Frostings',
+    'Chocolate Fillings',
+    'Professional Cake Finishing'
+  ]
+  },
+
+
+  {
     id: 'b15',
     images: ['img/Baking/Cookies/1.webp', 'img/Baking/Cookies/2.webp', 'img/Baking/Cookies/3.webp', 'img/Baking/Cookies/4.webp'],
     title: 'Cafe Cookies',
@@ -1185,6 +1238,66 @@ const baking = [
     'Gluten-Free Techniques',
     'Vegan & Sugar-Free Baking',
     'Wholesome Cookie Recipes'
+  ]
+  },
+
+  {
+    id: 'b37',
+    images: ['img/Baking/Mini Dip Cookies/1.webp', 'img/Baking/Mini Dip Cookies/2.webp', 'img/Baking/Mini Dip Cookies/3.webp'],
+    title: 'Mini Dip Cookies',
+    price: '₹1,199',
+    onlinePrice: '₹1,199',
+    offlinePrice: '₹3,000',
+    offlineDuration: '2 days',
+
+    desc: 'Master viral bakery-style mini dip cookies with delicious dipping sauces, premium flavours and professional baking techniques.',
+
+    highlights: [
+    '100% Beginner Friendly',
+    'Pre-recorded Step-by-Step Course',
+    'Lifetime Video Access',
+    'Detailed PDF Recipe Notes',
+    'WhatsApp Support',
+    'Multiple Dipping Sauces',
+    'Perfect for Home Bakers & Dessert Businesses'
+  ],
+
+  modules: [
+    {
+      title: 'Viral Mini Dip Cookies',
+      items: [
+        'Classic Mini Dip Cookies',
+        'Double Chocolate Mini Dip Cookies',
+        'Pistachio Mini Dip Cookies',
+        'Churros Mini Dip Cookies',
+        'Red Velvet Mini Dip Cookies',
+        'Marble Mini Dip Cookies'
+      ]
+    },
+    {
+      title: 'Dipping Sauces',
+      items: [
+        'Chocolate Dip',
+        'White Chocolate Dip',
+        'Signature Cookie Dipping Sauces'
+      ]
+    },
+    {
+      title: 'Course Essentials',
+      items: [
+        'Step-by-Step Video Tutorials',
+        'Detailed PDF Notes',
+        'WhatsApp Support',
+        'Bakery-Style Baking Techniques'
+      ]
+    }
+  ],
+
+  topics: [
+    'Mini Cookies',
+    'Dipping Sauces',
+    'Bakery-Style Cookies',
+    'Dessert Box Creations'
   ]
   },
 
