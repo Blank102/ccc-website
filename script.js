@@ -568,7 +568,7 @@ const baking = [
 
   {
     id: 'b9',
-    images: ['img/Baking/Sponge masterclass/sponge 2.webp', 'img/Baking/Sponge masterclass/Sponge 1.webp'],
+    images: ['img/Baking/Sponge masterclass/Sponge 2.webp', 'img/Baking/sponge masterclass/Sponge 1.webp'],
     title: 'Cake Sponges Masterclass',
     price: '₹699',
     onlinePrice: '₹699',
