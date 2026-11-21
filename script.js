@@ -11,7 +11,7 @@ const baking = [
     id: 'b1',
     images: ['img/Baking/Diploma/1.webp', 'img/Baking/Diploma/2.webp', 'img/Baking/Diploma/3.webp', 'img/Baking/Diploma/4.webp', 'img/Baking/Diploma/5.webp', 'img/Baking/Diploma/6.webp', 'img/Baking/Diploma/7.webp'],
     title: 'Six-Week Diploma Course',
-    onlinePrice: '10,000',
+    onlinePrice: '15,000',
     offlinePrice: '₹40,000',
     offlineDuration: '6 weeks',
     dur: '6 Weeks',
